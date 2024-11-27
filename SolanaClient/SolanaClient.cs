@@ -22,7 +22,7 @@ public class SolanaClient(string privateKey, string rpcUrl)
 
         // Perform token swap via Serum, Raydium, or other DEX
         var transactionBuilder = new TransactionBuilder()
-            .SetRecentBlockHash((await _rpcClient.GetRecentBlockHashAsync()).Result.Value.Blockhash)
+            .SetRecentBlockHash((await _rpcClient.GetLatestBlockHashAsync()).Result.Value.Blockhash)
             .SetFeePayer(_wallet.Account)
             .AddInstruction(TokenProgram.Transfer(
                 wsolAccount, 
@@ -51,7 +51,7 @@ public class SolanaClient(string privateKey, string rpcUrl)
 
         // Perform token swap via Serum, Raydium, or other DEX
         var transactionBuilder = new TransactionBuilder()
-            .SetRecentBlockHash((await _rpcClient.GetRecentBlockHashAsync()).Result.Value.Blockhash)
+            .SetRecentBlockHash((await _rpcClient.GetLatestBlockHashAsync()).Result.Value.Blockhash)
             .SetFeePayer(_wallet.Account)
             .AddInstruction(TokenProgram.Transfer(
                 customTokenAccount, 
