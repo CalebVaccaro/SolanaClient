@@ -1,0 +1,57 @@
+# Ignore .idea directory (e.g., JetBrains Rider or IntelliJ-based IDEs)
+.idea/
+
+# Ignore Visual Studio specific files and folders
+.vs/
+
+# Ignore build results
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore ASP.NET Scaffolding files
+.scaffolding/
+
+# Ignore NuGet Packages
+*.nupkg
+*.snupkg
+packages/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore compiled DLLs and EXEs
+*.dll
+*.exe
+*.pdb
+
+# Ignore publish output
+publish/
+wwwroot/
+
+# Ignore temporary or hidden system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment and configuration files
+*.env
+*.config.local
+
+# Ignore Rider settings
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dictionaries
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Ignore Visual Studio Code specific files
+.vscode/
